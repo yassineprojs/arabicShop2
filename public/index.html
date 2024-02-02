@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/9fab1d1833.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="nav-title">
+        <span class="dar"> Dar</span> <br />
+        <span class="nour">Nour</span>
+      </h1>
+      <div class="header-overlay">&nbsp;</div>
+      <div class="navbar">
+        <div class="nav_toggle">
+          <ion-icon name="menu-outline" class="nav_btn"></ion-icon>
+        </div>
+      </div>
+      <!-- navbar -->
+      <div class="navbar_nav bg-textured">
+        <div class="accriditation">
+          Made by <span class="maker">Ahmed Yassine Meddeb</span>
+        </div>
+
+        <!-- close nav -->
+        <div class="nav_div">
+          <ion-icon name="close-outline" class="navbar_nav-btn"></ion-icon>
+        </div>
+        <!-- Login form -->
+        <div class="container-popup" id="container">
+          <div class="form-container sign-in-container" id="login-form">
+            <form action="index.php" method="post">
+              <h1 class="account-head">Login</h1>
+              <input
+                type="email"
+                placeholder="Your e-mail address"
+                name="email"
+              />
+              <input
+                type="password"
+                placeholder="Your password"
+                name="password"
+              />
+              <input type="submit" value="login" class="popup-btn" />
+              <p class="input-para">
+                Don't have an account?
+                <a href="#" id="show-register-form" class="input-link"
+                  >Create one here</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="page_links">
+          <a href="#" class="page_link">Home</a>
+          <a href="#" class="page_link">Shop</a>
+          <a href="#" class="page_link">About Us</a>
+          <a href="#" class="page_link">Contact Us</a>
+        </div>
+        <div class="socials">
+          <h2 class="social-header">Follow Us</h2>
+          <ion-icon class="social" name="logo-instagram"></ion-icon>
+          <ion-icon class="social" name="logo-facebook"></ion-icon>
+          <ion-icon class="social" name="logo-twitter"></ion-icon>
+        </div>
+      </div>
+    </header>
+
+    <div id="root"></div>
+    <!-- <main>
+      <div class="hero-left">
+        <div class="layers">
+          <div class="layer" data-scene="1">
+            <span>Arabesque Attire</span>
+            <div
+              class="layer__image"
+              style="background-image: url(images/clothes/3.jpg)"
+            ></div>
+            <div class="layer__info">
+              Experience the timeless elegance of Arabic fashion with our
+              exquisite collection of traditional and modern clothing
+            </div>
+          </div>
+          <div class="layer" data-scene="2">
+            <span>Exotic</span>
+            <div
+              class="layer__image"
+              style="background-image: url('images/acc_perf/1.jpg')"
+            ></div>
+            <div class="layer__info">
+              Immerse yourself in the alluring aromas of Arabic perfumes and
+              elevate your style with our authentic accessories
+            </div>
+          </div>
+          <div class="layer layer-displayed" data-scene="3">
+            <span>Artisanal</span>
+            <div
+              class="layer__image"
+              style="background-image: url('images/tableware/1.png')"
+            ></div>
+            <div class="layer__info">
+              Elevate your dining experience with our artisanal Arabic pottery
+              and tableware, handcrafted with intricate designs and vibrant
+              colors.
+            </div>
+          </div>
+        </div>
+        <button onclick="switchLayer(2)">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button onclick="switchLayer()">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="hero-right">
+        <div class="layer" data-scene="1"></div>
+        <div class="layer" data-scene="2"></div>
+        <div class="layer layer-displayed" data-scene="3"></div>
+        <div class="photo-frame">
+          <div
+            class="layer"
+            style="background-image: url('images/clothes/2.jpg')"
+            data-scene="1"
+          ></div>
+          <div
+            class="layer"
+            style="background-image: url('images/acc_perf/2.jpg')"
+            data-scene="2"
+          ></div>
+          <div
+            class="layer layer-displayed"
+            style="background-image: url('images/tableware/2.jpg')"
+            data-scene="3"
+          ></div>
+          <div class="cover"></div>
+        </div>
+
+        <div class="photo-frame">
+          <div
+            class="layer"
+            style="background-image: url('images/clothes/1.jpg')"
+            data-scene="1"
+          ></div>
+          <div
+            class="layer"
+            style="background-image: url('images/acc_perf/3.jpg')"
+            data-scene="2"
+          ></div>
+          <div
+            class="layer layer-displayed"
+            style="background-image: url('images/tableware/3.png')"
+            data-scene="3"
+          ></div>
+          <div class="cover"></div>
+        </div>
+      </div>
+    </main> -->
+
+    <!-- <script>
+      let sliderIndex = 1;
+      let timeout;
+      const layers = [...document.querySelectorAll(".layer")];
+      const covers = [...document.querySelectorAll(".photo-frame")];
+
+      function changeCoverAnimState(state = 0) {
+        const st = state === 1 ? "running" : "paused";
+        covers.forEach((cover) => {
+          // cover.style['animation-play-state'] = st;
+          cover.querySelector(".cover").style.width = `${state * 100}%`;
+        });
+      }
+
+      function switchLayer(step = 1) {
+        const nextSlide =
+          (sliderIndex + step) % 3 === 0 ? 3 : (sliderIndex + step) % 3;
+
+        changeCoverAnimState(1);
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+          changeCoverAnimState(0);
+        }, 500);
+
+        for (let i of layers) {
+          i.classList.remove("layer-displayed");
+          i.classList.remove("layer-displayed-exit");
+          if (i.dataset.scene == nextSlide) {
+            i.classList.add("layer-displayed");
+          }
+          if (i.dataset.scene == sliderIndex) {
+            i.classList.add("layer-displayed-exit");
+          }
+        }
+        sliderIndex = nextSlide;
+      }
+    </script>-->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
