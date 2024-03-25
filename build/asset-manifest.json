@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/https//yassineprojs.github.io/arabicShop2/static/css/main.383e1140.css",
+    "main.js": "/https//yassineprojs.github.io/arabicShop2/static/js/main.d269394c.js",
+    "static/media/mirza.woff": "/https//yassineprojs.github.io/arabicShop2/static/media/mirza.1b0d0df4316f7a4b814d.woff",
+    "static/media/jozoor.woff": "/https//yassineprojs.github.io/arabicShop2/static/media/jozoor.f3879b1194ccdc9f36ce.woff",
+    "static/media/DMSerif.woff": "/https//yassineprojs.github.io/arabicShop2/static/media/DMSerif.084dac261cb9fbb79172.woff",
+    "static/media/marathon.ttf": "/https//yassineprojs.github.io/arabicShop2/static/media/marathon.ddf3ee1525e307e75b73.ttf",
+    "static/media/noise.png": "/https//yassineprojs.github.io/arabicShop2/static/media/noise.ac001f7373b5c0de0cda.png",
+    "static/media/marathon.woff": "/https//yassineprojs.github.io/arabicShop2/static/media/marathon.e1951800c5c8e426285c.woff",
+    "index.html": "/https//yassineprojs.github.io/arabicShop2/index.html",
+    "main.383e1140.css.map": "/https//yassineprojs.github.io/arabicShop2/static/css/main.383e1140.css.map",
+    "main.d269394c.js.map": "/https//yassineprojs.github.io/arabicShop2/static/js/main.d269394c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.383e1140.css",
+    "static/js/main.d269394c.js"
+  ]
+}
